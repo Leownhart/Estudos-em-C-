@@ -13,7 +13,7 @@ namespace ProjetoTest
                 Console.Write("Olá, Informe o nome do aluno(a) : ");
                 string nome = Console.ReadLine();
 
-                Console.WriteLine(" ----- Informe as notas do aluno -----");
+                Console.WriteLine(" ---- Informe as notas do aluno ----");
 
                 Console.Write("Nota 1ª: ");
                 double n1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -30,15 +30,15 @@ namespace ProjetoTest
 
                 if (media == 5)
                 {
-                    Console.WriteLine("-----Aluno está de recuperação-----");
+                    Console.WriteLine("----Aluno está de recuperação----");
                 }
                 else if (media < 5)
                 {
-                    Console.WriteLine("-----Aluno está reprovado-----");
+                    Console.WriteLine("----Aluno está reprovado----");
                 }
                 else if (media > 5)
                 {
-                    Console.WriteLine("-----Aluno aprovado-----");
+                    Console.WriteLine("----Aluno aprovado----");
                 }
 
                 DateTime t1 = DateTime.Now;
