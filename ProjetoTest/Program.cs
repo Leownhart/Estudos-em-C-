@@ -10,7 +10,7 @@ namespace ProjetoTest
             int resp = 0;
             do
             {
-                Console.Write("Informe o nome do aluno(a) : ");
+                Console.Write("Olá, Informe o nome do aluno(a) : ");
                 string nome = Console.ReadLine();
 
                 Console.WriteLine(" ----- Informe as notas do aluno -----");
