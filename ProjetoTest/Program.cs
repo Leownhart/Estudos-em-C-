@@ -33,11 +33,11 @@ namespace ProjetoTest
                     {
                         Console.WriteLine("<----Aluno está de recuperação---->");
                     }
-                    else if (media < 5)
+                    else if (media < 6)
                     {
                         Console.WriteLine("<----Aluno está reprovado---->");
                     }
-                    else if (media > 5)
+                    else if (media > 6)
                     {
                         Console.WriteLine("<----Aluno aprovado---->");
                     }
