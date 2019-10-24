@@ -14,12 +14,10 @@ namespace Op_DateTime
 
             string d1 = d.ToString();
             Console.WriteLine(d1);
-
             string d2 = d.ToString("yyyy-MM-dd HH:mm:ss");
             Console.WriteLine(d2);
-
             string d3 = d.ToString("yyyy-MM-dd HH:mm:ss.fff");
-            Console.WriteLine(d3);
+            Console.WriteLine(d3); 
 
             /*
             Console.WriteLine(d);
