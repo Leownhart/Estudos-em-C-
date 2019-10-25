@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Op2_TimeSpan
 {
@@ -17,7 +18,7 @@ namespace Op2_TimeSpan
             Console.WriteLine(sum);
             Console.WriteLine(dif);
             Console.WriteLine(mult);
-            Console.WriteLine(div);
+            Console.WriteLine(div.ToString("F2")); // Principais operações para trabalhar com TimeSpan
         }
     }
 }
