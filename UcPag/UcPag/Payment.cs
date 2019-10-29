@@ -1,4 +1,5 @@
 ﻿using System;
+using UcPag;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,10 +7,10 @@ namespace UcPag
 {
     class Payment
     {
-        public decimal CaptalInicial { get; set; }
+        public double CaptalInicial { get; set; }
         public int Periodo { get; set; }
 
-        public Payment (decimal CaptalInicial, int Periodo)
+        public Payment (double CaptalInicial, int Periodo)
         {
             this.CaptalInicial = CaptalInicial;
             this.Periodo = Periodo;
@@ -18,13 +19,13 @@ namespace UcPag
         {
 
         }
-        public double GerarTaxaJuro(double taxa)
+        public double GerarTaxaJuro()
         {
             return 0.01;
         }
-        public double CalcularJuros(decimal capitalinicial, int periodo)
+        public void CalcularJuros(double capitalinicial, int periodo)
         {
-            return  capitalinicial * Math.Pow((1 + ), periodo);
+            double CaptalFinal = capitalinicial * ((1 + 0.01) * 5);
         }
     }
 }
