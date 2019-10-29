@@ -1,23 +1,20 @@
 ﻿using System;
-using UcPag;
+using System.Globalization;
 using System.Collections.Generic;
 using System.Text;
 
 namespace UcPag
 {
-    class Payment
+    public class Payment
     {
-        public double CaptalInicial { get; set; }
-        public int Periodo { get; set; }
-
-        public Payment (double CaptalInicial, int Periodo)
-        {
-            this.CaptalInicial = CaptalInicial;
-            this.Periodo = Periodo;
-        }
+        public double CapitalFinal { get; set; }
         public Payment()
         {
 
+        }
+        public Payment(double capitalFinal)
+        {
+            CapitalFinal = capitalFinal;
         }
         public double GerarTaxaJuro()
         {
@@ -25,7 +22,14 @@ namespace UcPag
         }
         public void CalcularJuros(double capitalinicial, int periodo)
         {
-            double CaptalFinal = capitalinicial * ((1 + 0.01) * 5);
+            CapitalFinal = capitalinicial * Math.Pow(1 + GerarTaxaJuro(), periodo);
+        }
+        public override string ToString()
+        {
+            return "Resultado Esperado: " + CapitalFinal.
+                ToString("F2", CultureInfo.InvariantCulture);
         }
     }
+
 }
+
